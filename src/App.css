@@ -1,38 +1,139 @@
 .App {
   text-align: center;
+ 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .search-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
+  background: url(images/undraw_breakfast_psiw.svg) no-repeat;
+  min-height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} */
+
+#container{
+/* background-color:black; */
+overflow: hidden;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding-top: 20px;
+height: 90%;
+margin-top:5% ;
+box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+border-radius: 10px;
+}
+#bg-container{
+width: 50%;
+}
+#bg-container img{
+width: 100%;
+height: 90%;
+}
+#content-container{
+width: 30%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#content-container h1{
+color: #F9A826;
+font-weight: 900;
+font-size: 80px;
+line-height: 0.9em;
+margin-bottom: 30px;
+}
+#p1{
+line-height: 1.8em;
+font-weight: 500;
+font-size: 30px;
+}
+#p2{font-weight: 500;line-height: 1.8em;}
+#content-container button{
+border: none;
+outline: none;
+color: #FFF;
+background-color:#F9A826;
+padding: 16px 0px;
+border-radius: 40px;
+font-size: 16px;
+width: 160px;
+margin-top: 30px;
+cursor: pointer;
+transition: 0.7s ease;
+}
+#content-container button:hover{
+opacity: 0.9;
+transform: scale(1.1);
+}
+#main{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: #face88; */
+  min-height: 655px;
+  background-image: radial-gradient(circle at 1px 1px, #F9A826 1px, transparent 0);
+  background-size: 40px 40px;
+}
+#main-search{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 150px;
+  font-weight: 900;
+}
+#main-search span{color: #F9A826; }
+#form-div{margin-top: 50px;}
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #F9A826;
   color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+form.example button:hover {
+  opacity: 0.9;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+.card {
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card img{
+  border: 1px solid #F9A826;
+}
+.card h1{
+  color:  #F9A826;
+  font-weight: 700;
+}
+.card label{color: #3F3D56;
+font-weight: 800;
+font-size: 22px;}
